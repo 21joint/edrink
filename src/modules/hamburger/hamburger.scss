@@ -1,0 +1,51 @@
+@import "./variables";
+
+
+
+.#{$hamburger-selector} {
+  font-size: 20px;
+
+}
+
+.#{$hamburger-selector}, .#{$hamburger-selector}:after, .#{$hamburger-selector}:before {
+  position: relative;
+  display: inline-block;
+  width: $bar-width;
+  height: $bar-height;
+  background: $bar-color;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, .15);
+  transition: background .1s .2s ease
+}
+
+.#{$hamburger-selector}:after, .#{$hamburger-selector}:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  transition: top .1s .2s ease, transform .2s ease
+}
+
+.#{$hamburger-selector}:before {
+  top: -$bar-spacing;
+}
+
+.#{$hamburger-selector}:after {
+  top: $bar-spacing;
+}
+
+#{$open-classname} .#{$hamburger-selector} {
+  background: 0 0;
+  box-shadow: none
+}
+
+#{$open-classname} .#{$hamburger-selector}:after, #{$open-classname} .#{$hamburger-selector}:before {
+  top: 0;
+  transition: top .1s ease, transform .1s .2s ease
+}
+
+#{$open-classname} .#{$hamburger-selector}:before {
+  transform: rotate(45deg)
+}
+
+#{$open-classname} .#{$hamburger-selector}:after {
+  transform: rotate(-45deg)
+}
