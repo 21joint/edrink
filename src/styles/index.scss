@@ -1,27 +1,17 @@
 @import 'vars';
 @import '~bootstrap-sass/assets/stylesheets/bootstrap';
-
 @import 'flex/mixins/breakpoints';
 @import 'flex/mixins/grid';
 @import 'flex/flex-grid';
-
-
 @import 'fonts';
-
 @import 'type';
-
 @import 'icons';
-
 @import 'vars';
-
 @import 'helpers';
-
 @import '../modules/hamburger/hamburger';
-
 @import 'general';
-
 @import 'home';
-
 @import 'video';
+@import "register";
 @import 'header';
 
