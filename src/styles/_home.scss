@@ -1,0 +1,13 @@
+.home-section{
+  width: 100%;
+  @media (min-width: 1025px) {
+    max-width: 620px;
+  }
+  @media (min-width: 1140px) {
+    max-width: 680px;
+  }
+  a{
+    color: #010101;
+    text-decoration: underline;
+  }
+}
