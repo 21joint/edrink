@@ -10,7 +10,8 @@
   "homepage": "https://eatdrinkslc.com/",
   "scripts": {
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
-    "build": "webpack -p --progress --mode production --config webpack.config.build.js"
+    "build": "webpack -p --progress --mode production --config webpack.config.build.js",
+    "start": "webpack -p webpack-dev-server --progress --mode production --config webpack.config.build.js"
   },
   "repository": {
     "type": "git",
