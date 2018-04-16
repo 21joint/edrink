@@ -25,25 +25,33 @@
             <div class="flex-row">
                 <div class="flex-col-12">
                     <nav class="edrink--header--nav">
-                        <ul class="p-0 m-0 justify-content-center hidden-xs hidden-sm">
-                            <li role="presentation" class="active"><a href="#home">home</a></li>
-                            <li role="presentation"><a href="#buy-tickets">buy tickets</a></li>
-                            <li role="presentation" class="edrink-has--submenu"><a
-                                        href="#participants">drink
-                                    partners</a>
+                        <ul class="nav p-0 m-0 justify-content-center hidden-xs hidden-sm" role="tablist">
+                            <li role="presentation" class="active"><a role="tab" data-toggle="tab" aria-controls="#home"
+                                                                      href="#home">home</a></li>
+                            <li role="presentation"><a role="tab" data-toggle="tab" aria-controls="#buy-tickets"
+                                                       href="#buy-tickets">buy tickets</a></li>
+                            <li role="presentation" class="edrink-has--submenu"><a role="tab" data-toggle="tab"
+                                                                                   aria-controls="#participants" href="#participants">drink partners</a>
                                 <ul class="edrink-nav--submenu m-0 p-0">
-                                    <li><a href="#wineries"><span>Wineries</span></a></li>
-                                    <li><a href="#distilleries/" itemprop="name"><span>Distilleries</span></a>
-                                    </li>
-                                    <li><a href="#breweries"><span>Breweries</span></a></li>
+                                    <li role="presentation"><a role="tab" data-toggle="tab" aria-controls="#wineries"
+                                                               href="#wineries"><span>Wineries</span></a></li>
+                                    <li role="presentation"><a role="tab" data-toggle="tab"
+                                                               aria-controls="#distilleries" href="#distilleries"
+                                                               itemprop="name"><span>Distilleries</span></a></li>
+                                    <li role="presentation"><a role="tab" data-toggle="tab" aria-controls="#breweries"
+                                                               href="#breweries"><span>Breweries</span></a></li>
                                 </ul>
                             </li>
-                            <li role="presentation"><a href="#food-partners">food partners</a>
-                            </li>
-                            <li role="presentation"><a href="#sponsors">sponsors</a></li>
-                            <li role="presentation"><a href="#photos">photos</a></li>
-                            <li role="presentation"><a href="#about">about</a></li>
-                            <li role="presentation"><a href="#contact">contact</a></li>
+                            <li role="presentation"><a role="tab" data-toggle="tab" aria-controls="#food"
+                                                       href="#food-partners">food partners</a></li>
+                            <li role="presentation"><a role="tab" data-toggle="tab" aria-controls="#sponsors"
+                                                       href="#sponsors">sponsors</a></li>
+                            <li role="presentation"><a role="tab" data-toggle="tab" aria-controls="#photos"
+                                                       href="#photos">photos</a></li>
+                            <li role="presentation"><a role="tab" data-toggle="tab" aria-controls="#about"
+                                                       href="#about">about</a></li>
+                            <li role="presentation"><a role="tab" data-toggle="tab" aria-controls="#contact"
+                                                       href="#contact">contact</a></li>
                         </ul>
                         <button id="edrinkMobileMenu" class="btn edrink-menu--toggle hidden-md hidden-lg"
                                 data-target="edrinkMobileMenu" aria-expanded="false" data-toggle="dropdown"

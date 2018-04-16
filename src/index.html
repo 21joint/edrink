@@ -14,22 +14,38 @@
         <div class="flex-row">
             <div class="flex-col-12">
                 <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane fade in active" id="home">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <%= require('html-loader!./home/home.tpl.html') %>
+                        <%= require('html-loader!./video/video.tpl.html') %>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="buy-tickets">
+                        <%= require('html-loader!./tickets/buy-tickets.tpl.html') %>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="participants">
 
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="profile">
+                    <div role="tabpanel" class="tab-pane" id="wineries">
 
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="messages">
+                    <div role="tabpanel" class="tab-pane" id="distilleries">
 
                     </div>
-                    <div role="tabpanel" class="tab-pane fade" id="settings">
+                    <div role="tabpanel" class="tab-pane" id="breweries">
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="food-partners">
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="sponsors">
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="about">
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="contact">
 
                     </div>
                 </div>
-                <%= require('html-loader!./home/home.tpl.html') %>
-                <%= require('html-loader!./video/video.tpl.html') %>
-                <%= require('html-loader!./tickets/buy-tickets.tpl.html') %>
             </div>
         </div>
     </div>
