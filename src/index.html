@@ -13,6 +13,20 @@
     <div class="container">
         <div class="flex-row">
             <div class="flex-col-12">
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade in active" id="home">
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="profile">
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="messages">
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="settings">
+
+                    </div>
+                </div>
                 <%= require('html-loader!./home/home.tpl.html') %>
                 <%= require('html-loader!./video/video.tpl.html') %>
                 <%= require('html-loader!./tickets/buy-tickets.tpl.html') %>
