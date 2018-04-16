@@ -1,14 +1,10 @@
 {
   "presets": [
-    "env"
-    //    [
-    //      "env",
-    //      {
-    //        "modules": false,
-    //        "helpers": true,
-    //        "polyfill": false,
-    //        "regenerator": false
-    //      }
-    //    ]
+    [
+      "@babel/env",
+      {
+        "modules": false
+      }
+    ]
   ]
 }

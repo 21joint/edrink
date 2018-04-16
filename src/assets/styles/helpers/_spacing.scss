@@ -1,0 +1,23 @@
+$spacers: (0,5,10,15,20,25,30) !default;
+$directions: ('top', 'right', 'bottom', 'left');
+
+@each $key in $spacers {
+  .m-#{$key} {
+    margin: #{$key}px !important;
+  }
+  .p-#{$key} {
+    padding: #{$key}px !important;
+  }
+}
+
+
+@each $direction in $directions {
+  @each $key in $spacers {
+    .m#{str-slice($direction, 0, 1)}-#{$key} {
+      margin: #{$key}px !important;
+    }
+    .p#{str-slice($direction, 0, 1)}-#{$key} {
+      padding: #{$key}px !important;
+    }
+  }
+}

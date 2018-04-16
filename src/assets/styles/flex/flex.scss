@@ -1,5 +1,6 @@
 @import 'mixins/breakpoints';
 @import 'mixins/grid';
+@import "variables";
 @import 'grid-framework';
 @import 'flex-support';
 @import 'flex-utilities';
@@ -7,7 +8,6 @@
 .flex-row {
   @include make-flex-row();
 }
-
 
 // Remove the negative margin from default .row, then the horizontal padding
 // from all immediate children columns (to prevent runaway style inheritance).
@@ -32,6 +32,7 @@
     padding-left: 10px;
   }
 }
+
 .gutters-half {
   margin-right: 7.5px;
   margin-left: 7.5px;

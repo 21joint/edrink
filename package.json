@@ -1,13 +1,13 @@
 {
-  "name": "gs-webpack",
+  "name": "edrink-slc",
   "version": "1.0.0",
-  "description": "GS on webpack",
+  "description": "Eat Drink SLC | A summer evening social featuring the best in food & libations",
   "authors": [
     "levon@21joint.com",
     "samvel@21joint.com"
   ],
   "license": "MIT",
-  "homepage": "https://github.com/cvgellhorn/webpack-boilerplate",
+  "homepage": "https://eatdrinkslc.com/",
   "scripts": {
     "dev": "cross-env NODE_ENV=dev webpack-dev-server --progress --mode development --config webpack.config.dev.js",
     "build": "webpack -p --progress --mode production --config webpack.config.build.js"
@@ -17,22 +17,22 @@
     "url": "https://cvgellhorn@github.com/cvgellhorn/webpack-boilerplate.git"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0",
     "bootstrap-sass": "^3.3.7",
     "jquery": "^3.3.1"
   },
   "devDependencies": {
-    "babel": "^6.23.0",
-    "babel-cli": "^6.26.0",
+    "@babel/core": "^7.0.0-beta.44",
+    "@babel/preset-env": "^7.0.0-beta.44",
+    "babel-loader": "^8.0.0-beta.2",
     "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.4",
-    "babel-plugin-transform-runtime": "^6.23.0",
-    "babel-preset-env": "^1.6.1",
     "clean-webpack-plugin": "^0.1.19",
     "copy-webpack-plugin": "^4.5.1",
     "cross-env": "^5.1.4",
     "css-loader": "^0.28.11",
     "cssnano": "^3.10.0",
+    "eslint": "^4.19.1",
+    "eslint-config-webpack": "^1.2.5",
+    "eslint-plugin-import": "^2.11.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "file-loader": "^1.1.11",
     "glob": "^7.1.2",

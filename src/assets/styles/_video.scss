@@ -1,11 +1,11 @@
-.viseo-section{
+.viseo-section {
   max-width: 640px;
-  .video_wrapper{
+  .video_wrapper {
     position: relative;
     padding-bottom: 56.25%;
   }
 
-  .video-overlay{
+  .video-overlay {
     position: absolute;
     left: 0;
     right: 0;
@@ -17,7 +17,7 @@
     cursor: pointer;
     overflow: hidden;
   }
-  iframe{
+  iframe {
     position: absolute;
     left: 0;
     right: 0;

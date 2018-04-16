@@ -1,85 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport"
-        content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
-  <title>Eatdrink</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-<header class="edrink-header">
-  <div class="edrink-header--top">
-    <div class="container-fluid">
-      <div class="flex-row">
-        <div class="flex-col-6"><i class="icon-fb"></i></div>
-      </div>
-    </div>
-  </div>
-  <div class="edrink-header--middle">
-    <div class="container-fluid">
-      <div class="flex-row justify-content-center">
-        <div class="flex-col-auto">
-          <div class="edrink-logo--header">
-            <a href="https://eatdrinkslc.com/">
-              <img class="img-responsive" src="/images/edrink-logo.png" alt="">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="edrink-header--bottom">
-    <div class="container-fluid">
-      <div class="flex-row">
-        <div class="flex-col-12">
-          <nav class="edrink--header--nav">
-            <ul class="p-0 m-0 justify-content-center hidden-xs hidden-sm">
-              <li><a href="#">home</a></li>
-              <li><a href="#">buy tickets</a></li>
-              <li><a href="#">drink partners</a></li>
-              <li><a href="#">food partners</a></li>
-              <li><a href="#">sponsors</a></li>
-              <li><a href="#">photos</a></li>
-              <li><a href="#">about</a></li>
-              <li><a href="#">contact</a></li>
-            </ul>
-            <button id="edrinkMobileMenu" class="btn edrink-menu--toggle hidden-md hidden-lg"
-                    data-target="edrinkMobileMenu" aria-expanded="false"
-                    data-toggle="dropdown" aria-haspopup="true"><i class="icon-hamburger"></i></button>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="dropdown edrink-header--mobile" aria-labelledby="edrinkMobileMenu">
-    <div class="dropdown-menu edrink-menu--dropdown p-0 m-0"
-         aria-labelledby="menuToggle">
-      <nav class="edrink-mobilenav--primary">
-        <ul class="p-0 m-0">
-          <li><a class="btn btn-block text-left" target="_blank"
-                 href="#">Things to Do</a></li>
-          <li><a class="btn btn-block text-left" target="_blank"
-                 href="#">Events</a></li>
-          <li><a class="btn btn-block text-left" target="_blank"
-                 href="#">Hotels</a></li>
-          <li><a class="#" target="_blank"
-                 href="#">Restaurants</a></li>
-          <li><a class="btn btn-block text-left" target="_blank"
-                 href="#">About Denver</a></li>
-          <li><a class="btn btn-block text-left" target="_blank" href="#">Blog</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </div>
 
-</header>
-<div>
-  <ol style="padding: 30px 50px;">
-    <li><a href="home.html">Home</a></li>
-    <li><a href="video.html">Video</a></li>
-    <li><a href="register-success.html">Register-success</a></li>
-  </ol>
-</div>
+<%= require('html-loader!./header/header.tpl.html') %>
+
+<main class="main-content" role="main">
+    <div class="container">
+        <div class="flex-row">
+            <div class="flex-col-12">
+                <%= require('html-loader!./home/home.tpl.html') %>
+                <%= require('html-loader!./video/video.tpl.html') %>
+                <%= require('html-loader!./tickets/buy-tickets.tpl.html') %>
+            </div>
+        </div>
+    </div>
+</main>
+
+<%= require('html-loader!./footer/footer-widgets.tpl.html') %>
+<%= require('html-loader!./footer/footer.tpl.html') %>
+
 </body>
 </html>
