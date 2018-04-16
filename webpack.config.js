@@ -1,10 +1,12 @@
+'use strict';
+
 const path = require('path');
-const pkg = require('./package');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const glob = require('glob');
+const pkg = require('./package');
 // Is the current build a development build
 const IS_DEV = (process.env.NODE_ENV === 'dev');
 const project = {
@@ -23,13 +25,13 @@ const project = {
 
 const generateHTMLPlugins = () =>
   glob.sync('./src/**/*.html')
-    .map(function (dir) {
-      return new HtmlWebpackPlugin({
-        filename: path.basename(dir), // Output
-        template: dir, // Input,
-        title: pkg.description
-      });
-    });
+    .map(dir => new HtmlWebpackPlugin({
+      // Output
+      filename: path.basename(dir),
+      // Input,
+      template: dir,
+      title: pkg.description
+    }));
 
 /**
  * Webpack Configuration
@@ -106,11 +108,11 @@ module.exports = {
   plugins: [
     new webpack.LoaderOptionsPlugin({
       options: {
-        context: __dirname + '/src'
+        context: `${__dirname}/src`
       }
     }),
     new webpack.DefinePlugin({
-      IS_DEV: IS_DEV
+      IS_DEV
     }),
     new webpack.ProvidePlugin({
       $: 'jquery',
