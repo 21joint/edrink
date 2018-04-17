@@ -46,6 +46,9 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js'
   },
+  externals: [
+    /^babel-runtime/
+  ],
   resolve: {
     modules: [
       'node_modules',
@@ -98,9 +101,9 @@ module.exports = {
 
       // FONTS
       {
-        test: /\.(woff|woff2|ttf|eot|svg|gif|png|jpe?g)$/,
+        test: /\.(woff|woff2|ttf|eot|svg|gif|png|jpe?g)$/i,
         use: [
-          'url-loader?limit=50000&name=/[folder]/[name].[ext]&fallback=file-loader'
+          'url-loader?limit=50000&name=[folder]/[name].[ext]&fallback=file-loader'
         ]
       }
     ]

@@ -14,10 +14,10 @@ $directions: ('top', 'right', 'bottom', 'left');
 @each $direction in $directions {
   @each $key in $spacers {
     .m#{str-slice($direction, 0, 1)}-#{$key} {
-      margin: #{$key}px !important;
+      margin-#{$direction}: #{$key}px !important;
     }
     .p#{str-slice($direction, 0, 1)}-#{$key} {
-      padding: #{$key}px !important;
+      padding-#{$direction}: #{$key}px !important;
     }
   }
 }

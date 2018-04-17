@@ -5,6 +5,10 @@
   padding: 20px 0;
   text-align: center;
   text-transform: uppercase;
+  a {
+    color: #333333;
+    text-decoration: none;
+  }
 }
 
 @import "footer-widgets";

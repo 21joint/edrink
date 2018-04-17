@@ -1,0 +1,149 @@
+.edrink-header {
+  .collapse {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      height: 1px;
+      background-color: #cccccc;
+    }
+    &.in {
+      &:after {
+        display: block;
+      }
+    }
+
+    @media (min-width: $screen-md) {
+      display: block !important;
+      &:after {
+        display: none !important;
+      }
+    }
+  }
+}
+
+.edrink--header--nav {
+  text-transform: uppercase;
+  min-height: 50px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  line-height: 1;
+  background-color: #ffffff;
+  z-index: 10;
+  .dropdown-menu {
+    > .active {
+      > a {
+        &, &:hover, &:focus {
+          color: #84a24d;
+          background-color: #f3f3f3;
+        }
+      }
+    }
+  }
+  .open > a {
+    &, &:hover, &:focus {
+      color: #84a24d;
+      background-color: #f3f3f3;
+    }
+  }
+  > ul {
+    @include make-flex-row();
+    flex-wrap: wrap;
+    > li {
+      position: relative;
+      z-index: 20;
+      flex-grow: 1;
+      flex-shrink: 1;
+      text-align: center;
+      flex-basis: 100%;
+      max-width: 100%;
+      > a {
+        padding: 20px 15px;
+        color: #333;
+        display: block;
+        text-decoration: none;
+        &:hover, &:focus {
+          color: #84a24d;
+          background-color: #f3f3f3;
+        }
+      }
+      &.active {
+        > a {
+          color: #84a24d;
+          background-color: #f3f3f3;
+        }
+      }
+    }
+  }
+  @media (min-width: $screen-md) {
+    min-height: auto;
+    border-top: 1px solid #777777;
+    border-bottom: 1px solid #777777;
+    position: static;
+    > ul {
+      flex-wrap: nowrap;
+      > li {
+        flex-basis: auto;
+      }
+    }
+  }
+
+}
+
+.edrink-nav--submenu {
+  background-color: #ffffff;
+  z-index: 10;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3);
+  top: 100%;
+  border: none;
+  border-top: 1px solid #333333;
+  border-bottom: 3px solid #333333;
+  border-radius: 0;
+  font-size: inherit;
+  transition: 0.17s all;
+  left: 0;
+  right: 0;
+  > li {
+    > a {
+      padding: 20px 25px;
+    }
+  }
+  @media (max-width: $screen-md) {
+    position: static;
+    border: none;
+    box-shadow: none;
+    display: block !important;
+  }
+}
+
+.edrink-logo--header {
+  padding: 20px 0;
+  img {
+    max-height: 220px;
+    max-width: 100%;
+  }
+}
+
+.edrink-menu--toggle {
+  padding: 0;
+  top: 1px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 52px;
+  border: none;
+  line-height: 0;
+  border-bottom: 1px solid #777;
+  border-top: 1px solid #777;
+  z-index: 100;
+  border-radius: 0;
+  &:focus, &:active {
+    outline: 0 !important;
+    box-shadow: none;
+  }
+  @media(min-width: $screen-md) {
+    display: none;
+  }
+}
+

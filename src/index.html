@@ -7,52 +7,62 @@
 </head>
 <body>
 
-<%= require('html-loader!./header/header.tpl.html') %>
 
-<main class="main-content" role="main">
-    <div class="container">
-        <div class="flex-row">
-            <div class="flex-col-12">
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="home">
-                        <%= require('html-loader!./home/home.tpl.html') %>
-                        <%= require('html-loader!./video/video.tpl.html') %>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="buy-tickets">
-                        <%= require('html-loader!./tickets/buy-tickets.tpl.html') %>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="participants">
-                        <%= require('html-loader!./participants.tpl.html') %>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="wineries">
-                        <%= require('html-loader!./wineries/wineries.tpl.html') %>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="distilleries">
-                        <%= require('html-loader!./distilleries/distilleries.tpl.html') %>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="breweries">
-                        <%= require('html-loader!./breweries/breweries.tpl.html') %>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="food-partners">
-                        <%= require('html-loader!./food-partners/food-partners.tpl.html') %>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="sponsors">
-                        <%= require('html-loader!./sponsors/sponsors.tpl.html') %>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="about">
-                        <%= require('html-loader!./about/about.html') %>
-                    </div>
-                    <div role="tabpanel" class="tab-pane" id="contact">
-
+<main class="main-wrapper" role="main">
+    <div class="edrink-offer">
+        <%= require('html-loader!./partials/social/social.tpl.html') %>
+        <%= require('html-loader!./partials/header/header.tpl.html') %>
+        <div class="edrink-main--content">
+            <div class="container-fluid">
+                <div class="flex-row">
+                    <div class="flex-col-12 flex-col-md-7">
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                <%= require('html-loader!./partials/home/home.tpl.html') %>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="buy-tickets">
+                                <%= require('html-loader!./partials/tickets/buy-tickets.tpl.html') %>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="participants">
+                                <%= require('html-loader!./participants.tpl.html') %>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="wineries">
+                                <%= require('html-loader!./partials/wineries/wineries.tpl.html') %>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="distilleries">
+                                <%= require('html-loader!./partials/distilleries/distilleries.tpl.html') %>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="breweries">
+                                <%= require('html-loader!./partials/breweries/breweries.tpl.html') %>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="food-partners">
+                                <%= require('html-loader!./partials/food-partners/food-partners.tpl.html') %>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="sponsors">
+                                <%= require('html-loader!./partials/sponsors/sponsors.tpl.html') %>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="photos">
+                                <%= require('html-loader!./partials/photos/photos.tpl.html') %>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="about">
+                                <%= require('html-loader!./partials/about/about.tpl.html') %>
+                            </div>
+                            <div role="tabpanel" class="tab-pane fade" id="contact">
+                                <%= require('html-loader!./partials/contact/contact.tpl.html') %>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="edrink-fwidget bg-darker">
+            <div class="container-fluid">
+                <%= require('html-loader!./partials/footer/footer-widgets.tpl.html') %>
+            </div>
+        </div>
+        <%= require('html-loader!./partials/footer/footer.tpl.html') %>
     </div>
 </main>
-
-<%= require('html-loader!./footer/footer-widgets.tpl.html') %>
-<%= require('html-loader!./footer/footer.tpl.html') %>
 
 </body>
 </html>
