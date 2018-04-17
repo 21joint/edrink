@@ -11,23 +11,23 @@
         ],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "grid": 16,
         "tags": [
           "fb"
-        ]
+        ],
+        "grid": 16
       },
       "attrs": [
         {}
       ],
       "properties": {
         "order": 338,
-        "id": 2,
+        "id": 0,
         "name": "fb",
         "prevSize": 32,
         "code": 59648
       },
-      "setIdx": 2,
-      "setId": 10,
+      "setIdx": 0,
+      "setId": 9,
       "iconIdx": 0
     },
     {
@@ -40,10 +40,10 @@
         ],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "grid": 16,
         "tags": [
           "instagram"
-        ]
+        ],
+        "grid": 16
       },
       "attrs": [
         {}
@@ -55,8 +55,8 @@
         "prevSize": 32,
         "code": 59649
       },
-      "setIdx": 2,
-      "setId": 10,
+      "setIdx": 0,
+      "setId": 9,
       "iconIdx": 1
     },
     {
@@ -69,29 +69,29 @@
         ],
         "isMulticolor": false,
         "isMulticolor2": false,
-        "grid": 16,
         "tags": [
           "tw"
-        ]
+        ],
+        "grid": 16
       },
       "attrs": [
         {}
       ],
       "properties": {
         "order": 340,
-        "id": 0,
+        "id": 2,
         "name": "tw",
         "prevSize": 32,
         "code": 59650
       },
-      "setIdx": 2,
-      "setId": 10,
+      "setIdx": 0,
+      "setId": 9,
       "iconIdx": 2
     }
   ],
   "height": 1024,
   "metadata": {
-    "name": "icomoon"
+    "name": "edricons"
   },
   "preferences": {
     "showGlyphs": true,
@@ -99,9 +99,9 @@
     "showQuickUse2": true,
     "showSVGs": true,
     "fontPref": {
-      "prefix": "icon-",
+      "prefix": "edricon-",
       "metadata": {
-        "fontFamily": "icomoon",
+        "fontFamily": "edricons",
         "majorVersion": 1,
         "minorVersion": 0
       },

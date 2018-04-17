@@ -1,18 +1,19 @@
 @import "variables";
 
 @font-face {
-  font-family: 'icomoon';
-  src: url('#{$icomoon-font-path}/icomoon.eot?pae0qp#iefix') format('embedded-opentype'),
-  url('#{$icomoon-font-path}/icomoon.ttf?pae0qp') format('truetype'),
-  url('#{$icomoon-font-path}/icomoon.woff?pae0qp') format('woff'),
-  url('#{$icomoon-font-path}/icomoon.svg?pae0qp#icomoon') format('svg');
+  font-family: 'edricons';
+  src:  url('#{$icomoon-font-path}/edricons.eot?1ft6rl');
+  src:  url('#{$icomoon-font-path}/edricons.eot?1ft6rl#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/edricons.ttf?1ft6rl') format('truetype'),
+    url('#{$icomoon-font-path}/edricons.woff?1ft6rl') format('woff'),
+    url('#{$icomoon-font-path}/edricons.svg?1ft6rl#edricons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
+[class^="edricon-"], [class*=" edricon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: 'edricons' !important;
   speak: none;
   font-style: normal;
   font-weight: normal;
@@ -29,21 +30,19 @@
   @return unquote("\"") + $str + unquote("\"");
 }
 
-.icon-fb {
+.edricon-fb {
   &:before {
-    content: unicode($icon-fb);
+    content: unicode($edricon-fb); 
   }
 }
-
-.icon-instagram {
+.edricon-instagram {
   &:before {
-    content: unicode($icon-instagram);
+    content: unicode($edricon-instagram); 
   }
 }
-
-.icon-tw {
+.edricon-tw {
   &:before {
-    content: unicode($icon-tw);
+    content: unicode($edricon-tw); 
   }
 }
 

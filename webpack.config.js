@@ -1,10 +1,9 @@
-'use strict';
-
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 // const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const autoprefixer = require('autoprefixer');
 const glob = require('glob');
 const pkg = require('./package');
 // Is the current build a development build
@@ -53,10 +52,7 @@ module.exports = {
     modules: [
       'node_modules',
       project.src
-    ],
-    alias: {
-      '~': project.nodePath
-    }
+    ]
   },
   module: {
     rules: [
@@ -86,7 +82,7 @@ module.exports = {
               options: {
                 sourceMap: IS_DEV,
                 plugins: [
-                  require('autoprefixer')({
+                  autoprefixer({
                     browsers: ['last 3 versions']
                   })
                 ]
@@ -142,5 +138,5 @@ module.exports = {
   stats: {
     colors: true
   },
-  devtool: 'eval'
+  devtool: 'cheap-eval-source-map'
 };
