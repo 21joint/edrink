@@ -15,25 +15,49 @@
         <div class="edrink-main--content">
             <div class="container-fluid">
                 <div class="flex-row">
-                    <div class="flex-col-12 flex-col-md-8">
+                    <div class="flex-col-12">
                         <div class="tab-content">
                             <div role="tabpanel" class="tab-pane fade in active" id="home">
-                                <%= require('html-loader!./partials/home/home.tpl.html') %>
+                                <div class="flex-row">
+                                    <div class="flex-col-md-7">
+                                        <%= require('html-loader!./partials/home/home.tpl.html') %>
+                                    </div>
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="buy-tickets">
-                                <%= require('html-loader!./partials/tickets/buy-tickets.tpl.html') %>
+                                <div class="flex-row">
+                                    <div class="flex-col-md-7">
+                                        <%= require('html-loader!./partials/tickets/buy-tickets.tpl.html') %>
+                                    </div>
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="participants">
-                                <%= require('html-loader!./participants.tpl.html') %>
+                                <div class="flex-row">
+                                    <div class="flex-col-md-7">
+                                        <%= require('html-loader!./participants.tpl.html') %>
+                                    </div>
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="wineries">
-                                <%= require('html-loader!./partials/wineries/wineries.tpl.html') %>
+                                <div class="flex-row">
+                                    <div class="flex-col-md-7">
+                                        <%= require('html-loader!./partials/wineries/wineries.tpl.html') %>
+                                    </div>
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="distilleries">
-                                <%= require('html-loader!./partials/distilleries/distilleries.tpl.html') %>
+                                <div class="flex-row">
+                                    <div class="flex-col-md-7">
+                                        <%= require('html-loader!./partials/distilleries/distilleries.tpl.html') %>
+                                    </div>
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="breweries">
-                                <%= require('html-loader!./partials/breweries/breweries.tpl.html') %>
+                                <div class="flex-row">
+                                    <div class="flex-col-12">
+                                        <%= require('html-loader!./partials/breweries/breweries.tpl.html') %>
+                                    </div>
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="food-partners">
                                 <%= require('html-loader!./partials/food-partners/food-partners.tpl.html') %>
@@ -45,10 +69,18 @@
                                 <%= require('html-loader!./partials/photos/photos.tpl.html') %>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="about">
-                                <%= require('html-loader!./partials/about/about.tpl.html') %>
+                                <div class="flex-row">
+                                    <div class="flex-col-md-7">
+                                        <%= require('html-loader!./partials/about/about.tpl.html') %>
+                                    </div>
+                                </div>
                             </div>
                             <div role="tabpanel" class="tab-pane fade" id="contact">
-                                <%= require('html-loader!./partials/contact/contact.tpl.html') %>
+                                <div class="flex-row">
+                                    <div class="flex-col-md-7">
+                                        <%= require('html-loader!./partials/contact/contact.tpl.html') %>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
