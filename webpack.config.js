@@ -63,7 +63,10 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: 'babel-loader'
+        use: [
+          'babel-loader',
+          'eslint-loader'
+        ]
       },
       // SCSS
       {
@@ -103,7 +106,7 @@ module.exports = {
       {
         test: /\.(woff|woff2|ttf|eot|svg|gif|png|jpe?g)$/i,
         use: [
-          'url-loader?limit=50000&name=[folder]/[name].[ext]&fallback=file-loader'
+          'url-loader?limit=1024&name=[folder]/[name].[ext]&fallback=file-loader'
         ]
       }
     ]
@@ -111,7 +114,7 @@ module.exports = {
   plugins: [
     new webpack.LoaderOptionsPlugin({
       options: {
-        context: `${__dirname}/src`
+        context: path.resolve(__dirname, 'src')
       }
     }),
     new webpack.DefinePlugin({

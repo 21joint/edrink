@@ -4,9 +4,6 @@
     "document": true,
     "window": true
   },
-  "parserOptions": {
-    "sourceType": "script"
-  },
   "rules": {
     "comma-dangle": [
       "error",

@@ -1,3 +1,1 @@
-'use strict';
-
-import 'bootstrap-sass';
+require('bootstrap-sass');
